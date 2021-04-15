@@ -2,7 +2,7 @@ PREFIX=arm-linux-androideabi-
 ARCH=armv7l
 API_LEVEL=23
 HAVE_BE=0
-CFLAGS= -std=c11 -Iinclude -O2 -fno-exceptions -fno-rtti -fPIC -march=armv7l -DHAVE_BIG_ENDIAN=$(HAVE_BE) -D__ANDROID_API__=$(API_LEVEL)
+CFLAGS= -Iinclude -O2 -fno-exceptions -fno-rtti -fPIC -march=armv7l -DHAVE_BIG_ENDIAN=$(HAVE_BE) -D__ANDROID_API__=$(API_LEVEL)
 
 all: libtinyalsa.so 
 

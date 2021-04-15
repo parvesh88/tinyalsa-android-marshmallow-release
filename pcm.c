@@ -138,7 +138,7 @@ static const char * const subformat_lookup[] = {
         "STD",
 };
 
-extern enum pcm_format pcm_format_from_audio_format(audio_format_t format);
+// extern enum pcm_format pcm_format_from_audio_format(audio_format_t format);
 
 /* Converts audio_format to pcm_format.
  * Parameters:
@@ -146,7 +146,7 @@ extern enum pcm_format pcm_format_from_audio_format(audio_format_t format);
  *
  * Logs a fatal error if format is not a valid convertible audio_format_t.
  */
-inline enum pcm_format pcm_format_from_audio_format(audio_format_t format)
+static inline enum pcm_format pcm_format_from_audio_format(audio_format_t format)
 {
     switch (format) {
 #ifdef HAVE_BIG_ENDIAN
@@ -179,7 +179,7 @@ inline enum pcm_format pcm_format_from_audio_format(audio_format_t format)
     }
 }
 
-extern audio_format_t audio_format_from_pcm_format(enum pcm_format format);
+// extern audio_format_t audio_format_from_pcm_format(enum pcm_format format);
 
 /* Converts pcm_format to audio_format.
  * Parameters:
@@ -187,7 +187,7 @@ extern audio_format_t audio_format_from_pcm_format(enum pcm_format format);
  *
  * Logs a fatal error if format is not a valid convertible pcm_format.
  */
-inline audio_format_t audio_format_from_pcm_format(enum pcm_format format)
+static inline audio_format_t audio_format_from_pcm_format(enum pcm_format format)
 {
     switch (format) {
 #ifdef HAVE_BIG_ENDIAN
