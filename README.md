@@ -5,11 +5,14 @@ To get more features than official release.
 Usage:
 
 1. Setup Android NDK for Android marshmallow on any Linux distribution.
-2. Clone this repositery.
-3. Run following command from Terminal.
+2. Run following command from Terminal.
 ``` 
-sudo apt update & sudo apt-get install make & make 
+sudo apt update 
+sudo apt-get install git make
+git clone https://github.com/parvesh88/tinyalsa-android-marshmallow-release master
+cd master
+make 
 ```
-4. Check build directory.
+3. Check build directory.
 
 Enjoy! 
