@@ -1096,7 +1096,7 @@ struct pcm *pcm_open(unsigned int card, unsigned int device,
         goto fail;
     }
 
-#ifdef TTSTAMP
+#ifdef TSTAMP
     if (pcm->flags & PCM_MONOTONIC) {
         int arg = SNDRV_PCM_TSTAMP_TYPE_MONOTONIC;
         rc = ioctl(pcm->fd, SNDRV_PCM_IOCTL_TTSTAMP, &arg);
